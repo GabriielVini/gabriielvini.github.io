@@ -1,0 +1,12 @@
+<a href="#" onclick="copyToClipboard('46.442.494/0001-65')">Clique aqui para copiar o número</a>
+
+<script>
+function copyToClipboard(text) {
+  var input = document.createElement('input');
+  input.setAttribute('value', text);
+  document.body.appendChild(input);
+  input.select();
+  document.execCommand('copy');
+  document.body.removeChild(input);
+}
+</script>
